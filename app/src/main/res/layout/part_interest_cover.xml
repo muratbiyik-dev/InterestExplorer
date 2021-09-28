@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/PureInterest.Linear">
+
+    <ImageView
+        android:id="@+id/imgInterestICP1"
+        style="@style/PureInterest.Image"
+        android:layout_marginBottom="@dimen/App_Margin_XS"
+        android:contentDescription="@string/Description_Image"
+        android:src="@drawable/img_interest" />
+
+    <RelativeLayout style="@style/PureBox.Relative">
+
+        <TextView
+            android:id="@+id/txtRatingICP1"
+            style="@style/PureInterest.Text.Cover"
+            android:drawablePadding="@dimen/App_Padding_XS"
+            android:text="@string/Game_IMDB_Rating_Sample"
+            app:drawableStartCompat="@drawable/ic_rating_cover" />
+
+        <TextView
+            android:id="@+id/txtYearICP1"
+            style="@style/PureInterest.Text.Cover"
+            android:layout_alignParentEnd="true"
+            android:text="@string/Game_Release_Year_Sample" />
+
+    </RelativeLayout>
+
+</LinearLayout>

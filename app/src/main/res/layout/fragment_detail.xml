@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PureRoot.Scroll"
+    tools:context=".fragment.detail.DetailFragment">
+
+    <LinearLayout style="@style/PureBox.Linear">
+
+        <LinearLayout style="@style/PureInterest.Linear">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/ytpInterestDF"
+                style="@style/PureInterest.Video"
+                android:layout_margin="@dimen/App_Margin_S" />
+
+            <LinearLayout style="@style/PureBox.Linear.Horizontal">
+
+                <ImageView
+                    android:id="@+id/imgInterestDF"
+                    style="@style/PureInterest.Image"
+                    android:layout_margin="@dimen/App_Margin_S"
+                    android:contentDescription="@string/Description_Image"
+                    android:src="@drawable/img_interest" />
+
+                <LinearLayout style="@style/PureBox.Linear">
+
+                    <TextView
+                        android:id="@+id/txtNameDF"
+                        style="@style/PureInterest.Text.Title"
+                        android:layout_margin="@dimen/App_Margin_S"
+                        android:text="@string/Game_Name_Sample" />
+
+                    <TextView
+                        android:id="@+id/txtRatingDF"
+                        style="@style/PureInterest.Text"
+                        android:layout_margin="@dimen/App_Margin_S"
+                        android:drawablePadding="@dimen/App_Padding_XS"
+                        android:text="@string/Game_IMDB_Rating_Sample"
+                        app:drawableStartCompat="@drawable/ic_rating" />
+
+                    <TextView
+                        android:id="@+id/txtYearDF"
+                        style="@style/PureInterest.Text"
+                        android:layout_margin="@dimen/App_Margin_S"
+                        android:text="@string/Game_Release_Year_Sample" />
+
+                    <TextView
+                        android:id="@+id/txtGenreDF"
+                        style="@style/PureInterest.Text"
+                        android:layout_margin="@dimen/App_Margin_S"
+                        android:text="@string/Game_Genre_Name_Sample" />
+
+                    <TextView
+                        android:id="@+id/txtCreatorDF"
+                        style="@style/PureInterest.Text"
+                        android:layout_margin="@dimen/App_Margin_S"
+                        android:text="@string/Game_Studio_Name_Sample" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/PureBox.Linear">
+
+                <LinearLayout
+                    android:id="@+id/lnrDetailLine1DF"
+                    style="@style/PureBox.Linear.Horizontal"
+                    android:layout_margin="@dimen/App_Margin_S">
+
+                    <TextView
+                        android:id="@+id/txtDetailLabel1DF"
+                        style="@style/PureInterest.Text.Label"
+                        android:text="@string/Detail_Season_Count_Label" />
+
+                    <TextView
+                        android:id="@+id/txtDetail1DF"
+                        style="@style/PureInterest.Text"
+                        android:text="@string/Series_Season_Count_Sample" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnrDetailLine2DF"
+                    style="@style/PureBox.Linear.Horizontal"
+                    android:layout_margin="@dimen/App_Margin_S">
+
+                    <TextView
+                        android:id="@+id/txtDetailLabel2DF"
+                        style="@style/PureInterest.Text.Label"
+                        android:text="@string/Detail_Episode_Count_Label" />
+
+                    <TextView
+                        android:id="@+id/txtDetail2DF"
+                        style="@style/PureInterest.Text"
+                        android:text="@string/Series_Episode_Count_Sample" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/PureBox.Linear"
+                    android:layout_margin="@dimen/App_Margin_S">
+
+                    <TextView
+                        style="@style/PureInterest.Text.Label"
+                        android:layout_marginBottom="@dimen/App_Margin_S"
+                        android:text="@string/Detail_Description_Label" />
+
+                    <TextView
+                        android:id="@+id/txtDescriptionDF"
+                        style="@style/PureInterest.Text"
+                        android:justificationMode="inter_word"
+                        android:text="@string/Game_Description_Sample" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltRecommendDF"
+            style="@style/PureShelf.Relative"
+            android:layout_marginTop="@dimen/Shelf_Margin">
+
+            <RelativeLayout
+                android:id="@+id/rltRecommendBarDF"
+                style="@style/PureBar.Relative.Shelf"
+                android:layout_marginHorizontal="@dimen/App_Margin_S"
+                android:layout_marginBottom="@dimen/App_Margin_M">
+
+                <TextView
+                    android:id="@+id/txtRecommendTitleDF"
+                    style="@style/PureBar.Relative.Text.Shelf"
+                    android:drawablePadding="@dimen/App_Padding_M"
+                    android:text="@string/Detail_Recommend"
+                    app:drawableStartCompat="@drawable/ic_recommend" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcyRecommendDF"
+                style="@style/PureShelf.Recycler.Horizontal"
+                android:layout_below="@id/rltRecommendBarDF" />
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/prgRecommendDF"
+                style="@style/PureShelf.Progress"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtRecommendTryDF"
+                style="@style/PureButton.Text.Selectable"
+                android:layout_centerInParent="true"
+                android:text="@string/Button_Try_Again"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

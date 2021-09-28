@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PureRoot.Relative"
+    tools:context=".fragment.list.ListFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyInterestLF"
+        style="@style/PureShelf.Recycler" />
+
+    <RelativeLayout
+        style="@style/PureBox.Relative"
+        android:layout_centerVertical="true">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/prgLoadingLF"
+            style="@style/PureShelf.Progress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/App_Margin_Center_S"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtTryAgainLF"
+            style="@style/PureButton.Text.Selectable"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/App_Margin_Center_S"
+            android:text="@string/Button_Try_Again"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

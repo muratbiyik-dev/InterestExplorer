@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PureRoot.Relative"
+    tools:context=".fragment.main.SearchFragment">
+
+    <RelativeLayout style="@style/PureBox.Relative">
+
+        <TextView
+            android:id="@+id/txtNoResultSF"
+            style="@style/PureInfo.Text.Card"
+            android:text="@string/Search_No_Result"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lnrInfoSF"
+            style="@style/PureBox.Linear"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                style="@style/PureInfo.Image"
+                android:contentDescription="@string/Description_Image"
+                android:src="@drawable/img_search" />
+
+            <TextView
+                style="@style/PureInfo.Text.Card"
+                android:text="@string/Search_Info" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyInterestSF"
+        style="@style/PureShelf.Recycler" />
+
+    <RelativeLayout
+        style="@style/PureBox.Relative"
+        android:layout_centerVertical="true">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/prgLoadingSF"
+            style="@style/PureShelf.Progress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/App_Margin_Center_M"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtTryAgainSF"
+            style="@style/PureButton.Text.Selectable"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/App_Margin_Center_M"
+            android:text="@string/Button_Try_Again"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PureRoot.Scroll"
+    tools:context=".fragment.explore.ExploreFragment">
+
+    <LinearLayout style="@style/PureBox.Linear">
+
+        <RelativeLayout
+            android:id="@+id/rltAllEF"
+            style="@style/PureShelf.Relative">
+
+            <RelativeLayout
+                android:id="@+id/rltAllBarEF"
+                style="@style/PureBar.Relative.Shelf"
+                android:layout_marginHorizontal="@dimen/App_Margin_S"
+                android:layout_marginBottom="@dimen/App_Margin_M">
+
+                <TextView
+                    android:id="@+id/txtAllTitleEF"
+                    style="@style/PureBar.Relative.Text.Shelf"
+                    android:drawablePadding="@dimen/App_Padding_M"
+                    android:text="@string/Explore_All"
+                    app:drawableStartCompat="@drawable/ic_all" />
+
+                <ImageView
+                    android:id="@+id/imgAllButtonEF"
+                    style="@style/PureBar.Relative.Image"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/Description_Icon"
+                    android:src="@drawable/ic_forward" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcyAllEF"
+                style="@style/PureShelf.Recycler.Horizontal"
+                android:layout_below="@id/rltAllBarEF" />
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/prgAllEF"
+                style="@style/PureShelf.Progress"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtAllTryEF"
+                style="@style/PureButton.Text.Selectable"
+                android:layout_centerInParent="true"
+                android:text="@string/Button_Try_Again"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltLatestEF"
+            style="@style/PureShelf.Relative"
+            android:layout_marginTop="@dimen/Shelf_Margin">
+
+            <RelativeLayout
+                android:id="@+id/rltLatestBarEF"
+                style="@style/PureBar.Relative.Shelf"
+                android:layout_marginHorizontal="@dimen/App_Margin_S"
+                android:layout_marginBottom="@dimen/App_Margin_M">
+
+                <TextView
+                    android:id="@+id/txtLatestTitleEF"
+                    style="@style/PureBar.Relative.Text.Shelf"
+                    android:drawablePadding="@dimen/App_Padding_M"
+                    android:text="@string/Explore_Latest"
+                    app:drawableStartCompat="@drawable/ic_latest" />
+
+                <ImageView
+                    android:id="@+id/imgLatestButtonEF"
+                    style="@style/PureBar.Relative.Image"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/Description_Icon"
+                    android:src="@drawable/ic_forward" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcyLatestEF"
+                style="@style/PureShelf.Recycler.Horizontal"
+                android:layout_below="@id/rltLatestBarEF" />
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/prgLatestEF"
+                style="@style/PureShelf.Progress"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtLatestTryEF"
+                style="@style/PureButton.Text.Selectable"
+                android:layout_centerInParent="true"
+                android:text="@string/Button_Try_Again"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltChoiceEF"
+            style="@style/PureShelf.Relative"
+            android:layout_marginTop="@dimen/Shelf_Margin">
+
+            <RelativeLayout
+                android:id="@+id/rltChoiceBarEF"
+                style="@style/PureBar.Relative.Shelf"
+                android:layout_marginHorizontal="@dimen/App_Margin_S"
+                android:layout_marginBottom="@dimen/App_Margin_M">
+
+                <TextView
+                    android:id="@+id/txtChoiceTitleEF"
+                    style="@style/PureBar.Relative.Text.Shelf"
+                    android:drawablePadding="@dimen/App_Padding_M"
+                    android:text="@string/Explore_Choice"
+                    app:drawableStartCompat="@drawable/ic_choice" />
+
+                <ImageView
+                    android:id="@+id/imgChoiceButtonEF"
+                    style="@style/PureBar.Relative.Image"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/Description_Icon"
+                    android:src="@drawable/ic_forward" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcyChoiceEF"
+                style="@style/PureShelf.Recycler.Horizontal"
+                android:layout_below="@id/rltChoiceBarEF" />
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/prgChoiceEF"
+                style="@style/PureShelf.Progress"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtChoiceTryEF"
+                style="@style/PureButton.Text.Selectable"
+                android:layout_centerInParent="true"
+                android:text="@string/Button_Try_Again"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

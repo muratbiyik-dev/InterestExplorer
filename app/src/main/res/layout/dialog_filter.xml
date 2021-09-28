@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PureDialog.Linear"
+    android:paddingHorizontal="@dimen/App_Padding_M"
+    android:paddingTop="@dimen/App_Padding_M"
+    tools:context=".dialog.FilterDialog">
+
+    <TextView
+        android:id="@+id/txtCreatorTitleFD"
+        style="@style/PureDialog.Text"
+        android:layout_marginBottom="@dimen/App_Margin_S"
+        android:text="@string/Filter_Studio_Title" />
+
+    <TextView
+        android:id="@+id/txtCreatorFD"
+        style="@style/PureButton.Text.Selectable.Full"
+        android:layout_marginBottom="@dimen/App_Margin_S"
+        android:text="@string/Filter_Studio_All" />
+
+    <Spinner
+        android:id="@+id/spnCreatorFD"
+        style="@style/PureSpinner.Dialog"
+        android:layout_marginBottom="@dimen/App_Margin_S"
+        android:prompt="@string/Filter_Studio_Title" />
+
+    <TextView
+        style="@style/PureDialog.Text"
+        android:layout_marginBottom="@dimen/App_Margin_S"
+        android:text="@string/Filter_Genre_Title" />
+
+    <TextView
+        android:id="@+id/txtGenreFD"
+        style="@style/PureButton.Text.Selectable.Full"
+        android:layout_marginBottom="@dimen/App_Margin_S"
+        android:text="@string/Filter_Genre_All" />
+
+    <Spinner
+        android:id="@+id/spnGenreFD"
+        style="@style/PureSpinner.Dialog"
+        android:layout_marginBottom="@dimen/App_Margin_S"
+        android:prompt="@string/Filter_Genre_Title" />
+
+    <TextView
+        style="@style/PureDialog.Text"
+        android:layout_marginBottom="@dimen/App_Margin_S"
+        android:text="@string/Filter_List_Title" />
+
+    <TextView
+        android:id="@+id/txtListFD"
+        style="@style/PureButton.Text.Selectable.Full"
+        android:layout_marginBottom="@dimen/App_Margin_S"
+        android:text="@string/Filter_List_All" />
+
+    <Spinner
+        android:id="@+id/spnListFD"
+        style="@style/PureSpinner.Dialog"
+        android:layout_marginBottom="@dimen/App_Margin_S"
+        android:prompt="@string/Filter_List_Title" />
+
+    <LinearLayout
+        style="@style/PureButton.Linear"
+        android:layout_marginTop="@dimen/App_Margin_M"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txtCancelFD"
+            style="@style/PureButton.Text.Selectable.Full"
+            android:layout_width="0dp"
+            android:layout_marginEnd="@dimen/App_Margin_M"
+            android:layout_weight="1"
+            android:text="@string/Button_Cancel" />
+
+        <TextView
+            android:id="@+id/txtApplyFD"
+            style="@style/PureButton.Text.Selectable.Full"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/Button_Apply" />
+
+    </LinearLayout>
+
+</LinearLayout>

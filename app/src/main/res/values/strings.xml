@@ -1,0 +1,162 @@
+<resources>
+
+    <string name="app_name">IntExp</string>
+
+    <!-- region Content Description -->
+    <string name="Description_Icon">"Icon"</string>
+    <string name="Description_Image">"Image"</string>
+    <!-- endregion -->
+
+    <!-- region MainActivity -->
+    <string name="Main_Conn_Fail_Title">"Bağlantı Başarısız!"</string>
+    <string name="Main_Conn_Fail_Content">"Lütfen cihazınızın internete bağlı olduğundan emin olun ve tekrar deneyin."</string>
+    <string name="Main_Conn_Fail_Button">"Tekrar Dene"</string>
+    <!-- endregion -->
+
+    <!-- region HomeFragment -->
+    <string name="Home_Title">"Ana Sayfa"</string>
+    <!-- endregion -->
+
+    <!-- region SearchFragment -->
+    <string name="Search_Title">"Arama"</string>
+    <string name="Search_Query_Hint">"Aradığınız bir şey mi var?"</string>
+    <string name="Search_Info">"Arama çubuğunu kullanarak film, dizi, video oyunu ve roman araması yapabilirsiniz."</string>
+    <string name="Search_No_Result">"Hiç sonuç bulunamadı"</string>
+    <!-- endregion -->
+
+    <!-- region ExploreFragment -->
+    <string name="Explore_Title">"Keşfet"</string>
+
+    <string name="Explore_Movie">"Film"</string>
+    <string name="Explore_Series">"Dizi"</string>
+    <string name="Explore_Game">"Oyun"</string>
+    <string name="Explore_Novel">"Roman"</string>
+
+    <string name="Explore_All">"Tümü"</string>
+    <string name="Explore_Latest">"En Yeniler"</string>
+    <string name="Explore_Choice">"Editörün Seçimi"</string>
+    <!-- endregion -->
+
+    <!-- region ListFragment -->
+    <string name="List_Title">"Listele"</string>
+
+    <string name="List_Movie">"Filmler"</string>
+    <string name="List_Series">"Diziler"</string>
+    <string name="List_Game">"Video Oyunları"</string>
+    <string name="List_Novel">"Romanlar"</string>
+    <!-- endregion -->
+
+    <!-- region DetailFragment -->
+    <string name="Detail_Title">"Detay"</string>
+
+    <string name="Detail_Description_Label">"Açıklama"</string>
+    <string name="Detail_Running_Time_Label">"Süre (dk)"</string>
+    <string name="Detail_Season_Count_Label">"Sezon Sayısı"</string>
+    <string name="Detail_Episode_Count_Label">"Bölüm Sayısı"</string>
+    <string name="Detail_Page_Count_Label">"Sayfa Sayısı"</string>
+
+    <string name="Detail_Recommend">"Tavsiye Edilenler"</string>
+    <!-- endregion -->
+
+    <!-- region PrefFragment -->
+    <string name="Pref_Title">"Tercihler"</string>
+
+    <string name="Pref_Theme">"Uygulama Teması"</string>
+    <string name="Pref_Theme_Default">"Varsayılan Tema"</string>
+    <string name="Pref_Theme_Light">"Açık Tema"</string>
+    <string name="Pref_Theme_Dark">"Koyu Tema"</string>
+    <!-- endregion -->
+
+    <!-- region FilterDialog -->
+    <string name="Filter_Title">"Filtrele"</string>
+
+    <string name="Filter_Creator_Title">"Yaratıcı"</string>
+    <string name="Filter_Creator_All">"Tüm Yaratıcılar"</string>
+
+    <string name="Filter_Studio_Title">"Stüdyo"</string>
+    <string name="Filter_Studio_All">"Tüm Stüdyolar"</string>
+
+    <string name="Filter_Author_Title">"Yazar"</string>
+    <string name="Filter_Author_All">"Tüm Yazarlar"</string>
+
+    <string name="Filter_Genre_Title">"Tür"</string>
+    <string name="Filter_Genre_All">"Tüm Türler"</string>
+
+    <string name="Filter_List_Title">"Liste"</string>
+    <string name="Filter_List_All">"Tüm Listeler"</string>
+    <!-- endregion -->
+
+    <!-- region OrderDialog -->
+    <string name="Order_Title">"Sırala"</string>
+
+    <string name="Order_Criteria_Title">"Sıralama Kriteri"</string>
+    <string name="Order_Criteria_Addition_Date">"Eklenme Tarihi"</string>
+    <string name="Order_Criteria_Release_Year">"Çıkış Yılı"</string>
+    <string name="Order_Criteria_Rating">"Puanlama"</string>
+
+    <string name="Order_Style_Title">"Sıralama Tarzı"</string>
+    <string name="Order_Style_New_To_Old">"Yeniden Eskiye"</string>
+    <string name="Order_Style_Old_To_New">"Eskiden Yeniye"</string>
+    <string name="Order_Style_High_To_Low">"Yüksekten Düşüğe"</string>
+    <string name="Order_Style_Low_To_High">"Düşükten Yükseğe"</string>
+    <!-- endregion -->
+
+    <!-- region Button -->
+    <string name="Button_Try_Again">"Tekrar Dene"</string>
+    <string name="Button_Apply">"Uygula"</string>
+    <string name="Button_Cancel">"İptal Et"</string>
+    <!-- endregion -->
+
+    <!-- region Toast -->
+    <string name="Toast_List_End">"Listenin sonuna ulaştınız"</string>
+    <!-- endregion -->
+
+    <!-- region Movie -->
+    <string name="Movie_Title">"Film"</string>
+
+    <string name="Movie_Name_Sample">"Yıldız Savaşları: Bölüm I - Gizli Tehlike"</string>
+    <string name="Movie_Description_Sample">"Yıldız Savaşları: Bölüm I - Gizli Tehlike, Star Wars (Yıldız Savaşları) serisine ait 1999 yılı yapımı bir bilimkurgu filmidir. George Lucas tarafından yazılmış ve yönetilmiştir.\n\nYapım sırasına göre serinin dördüncü filmi, hikâyenin kronolojik sıralamasına göre ilk filmidir. Film 19 Mayıs 1999 tarihinde vizyona çıkmıştır."</string>
+    <string name="Movie_Release_Year_Sample">"1999"</string>
+    <string name="Movie_Running_Time_Sample">"136"</string>
+    <string name="Movie_IMDB_Rating_Sample">"6.5"</string>
+    <string name="Movie_Genre_Name_Sample">"Bilimkurgu"</string>
+    <string name="Movie_Studio_Name_Sample">"Lucasfilm"</string>
+    <!-- endregion -->
+
+    <!-- region Series -->
+    <string name="Series_Title">"Dizi"</string>
+
+    <string name="Series_Name_Sample">"Star Wars: The Clone Wars"</string>
+    <string name="Series_Description_Sample">"Star Wars: Klon Savaşları, Amerikan animasyon televizyon dizisi. Sinema filmi Yıldız Savaşları'ndan uyarlanan dizi, serinin 2. ve 3. bölümleri arasında geçen olayları konu almaktadır. 2008 Ağustos ayında 98 dakikalık bir film ile başlayıp, 22 bölüm olarak planlanan ilk sezonunu 3 Ekim 2008'de Cartoon Network'te yayınlamıştır."</string>
+    <string name="Series_First_Episode_Year_Sample">"2008"</string>
+    <string name="Series_Final_Episode_Year_Sample">"2020"</string>
+    <string name="Series_Season_Count_Sample">"7"</string>
+    <string name="Series_Episode_Count_Sample">"133"</string>
+    <string name="Series_IMDB_Rating_Sample">"8.3"</string>
+    <string name="Series_Genre_Name_Sample">"Bilimkurgu"</string>
+    <string name="Series_Studio_Name_Sample">"Lucasfilm"</string>
+    <!-- endregion -->
+
+    <!-- region Game -->
+    <string name="Game_Title">"Video Oyunu"</string>
+
+    <string name="Game_Name_Sample">"Half-Life"</string>
+    <string name="Game_Description_Sample">"Half-Life, 1998 yılında Sierra Studios tarafından yayımlanan ve Valve tarafından üretilen birinci şahıs nişancı bilimkurgu video oyunudur. Oyun, serinin ilk oyunu olmakla beraber aynı zamanda Valve\'nin ürettiği ilk oyundur. Oyuncu, bir ışınlanma deneyinin ters gitmesi sonucu Xen olarak bilinen başka bir boyuttan Black Mesa Araştırma Tesisi\'ne ışınlanan uzaylılardan savaşarak ve bulmacaları çözerek tesisten kaçmaya çalışan Dr. Gordon Freeman rolünü üstleniyor. Zamanın diğer oyunlarına göre Half-Life\'da ara sahneler yoktur. Oyuncu her zaman Freeman\'nı kontrol ediyor. Her zaman onun gözünden görüyor. Valve\'nin kurucularından olan Gabe Newell \'\'ekip olarak oyunun sadece ateş etmeye meyilli bir oyundan çok daha fazla olmasını istedik.\'\' demiştir. Oyunun grafik motoru, GoldSrc, aslında Quake grafik motorunun modifikasyonlara uğramış halidir. Half-Life, grafiğiyle, gerçekçi oynanışıyla ve doğallığıyla küresel olarak beğenilmiştir. Oyun, elliden fazla ödüle sahip olmakla birlikte gelmiş geçmiş en iyi oyun olarak görülüyor. Oyun, kendisinden sonra çıkan oyunlara da ilham kaynağı olmuştur. Half-Life Aralık 2008\'de toplam 9.3 milyon kopya satmıştır. 2001\'de PlayStation 2, 2013\'te OS X ve Linux\'a çıkmıştır."</string>
+    <string name="Game_Release_Year_Sample">"1998"</string>
+    <string name="Game_IMDB_Rating_Sample">"8.7"</string>
+    <string name="Game_Genre_Name_Sample">"Aksiyon"</string>
+    <string name="Game_Studio_Name_Sample">"Valve Corporation"</string>
+    <!-- endregion -->
+
+    <!-- region Novel -->
+    <string name="Novel_Title">"Roman"</string>
+
+    <string name="Novel_Name_Sample">"O"</string>
+    <string name="Novel_Description_Sample">"O (İngilizce: It), Stephen King tarafından yazılan gerilim-korku türü bir romandır."</string>
+    <string name="Novel_Publish_Year_Sample">"1986"</string>
+    <string name="Novel_Page_Count_Sample">"1138"</string>
+    <string name="Novel_Genre_Name_Sample">"Korku"</string>
+    <string name="Novel_Author_Name_Sample">"Stephen King"</string>
+    <!-- endregion -->
+
+</resources>

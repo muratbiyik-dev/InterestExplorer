@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- region App -->
+    <dimen name="App_Margin_XS">1dp</dimen>
+    <dimen name="App_Margin_S">5dp</dimen>
+    <dimen name="App_Margin_M">10dp</dimen>
+    <dimen name="App_Margin_L">20dp</dimen>
+    <dimen name="App_Margin_XL">40dp</dimen>
+    <dimen name="App_Margin_XXL">80dp</dimen>
+    <dimen name="App_Margin_XXXL">160dp</dimen>
+    <dimen name="App_Margin_Center_S">100dp</dimen>
+    <dimen name="App_Margin_Center_M">150dp</dimen>
+
+    <dimen name="App_Padding_XS">1dp</dimen>
+    <dimen name="App_Padding_S">5dp</dimen>
+    <dimen name="App_Padding_M">10dp</dimen>
+    <dimen name="App_Padding_L">20dp</dimen>
+    <dimen name="App_Padding_XL">40dp</dimen>
+
+    <dimen name="App_TextSize_XS">16sp</dimen>
+    <dimen name="App_TextSize_S">18sp</dimen>
+    <dimen name="App_TextSize_M">20sp</dimen>
+    <dimen name="App_TextSize_L">22sp</dimen>
+    <dimen name="App_TextSize_XL">24sp</dimen>
+    <!-- endregion -->
+
+    <!-- region Bar -->
+    <dimen name="Bar_Height">50dp</dimen>
+    <dimen name="Bar_Search_Height">45dp</dimen>
+    <!-- endregion -->
+
+    <!-- region Shelf -->
+    <dimen name="Shelf_Height">258sp</dimen>
+    <dimen name="Shelf_Margin">8sp</dimen>
+    <!-- endregion -->
+
+    <!-- region Interest -->
+    <dimen name="Interest_Image_Width">115sp</dimen>
+    <dimen name="Interest_Image_Height">170sp</dimen>
+
+    <dimen name="Interest_Label_Width">125sp</dimen>
+    <!-- endregion -->
+
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navMain"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.pureblacksoft.interestexplorer.fragment.main.HomeFragment"
+        android:label="@string/Home_Title"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.pureblacksoft.interestexplorer.fragment.main.SearchFragment"
+        android:label="@string/Search_Title"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/prefFragment"
+        android:name="com.pureblacksoft.interestexplorer.fragment.PrefFragment"
+        android:label="@string/Pref_Title"
+        tools:layout="@layout/fragment_pref" />
+    <action
+        android:id="@+id/action_global_prefFragment"
+        app:destination="@id/prefFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <!-- region ListFragment -->
+    <fragment
+        android:id="@+id/movieListFragment"
+        android:name="com.pureblacksoft.interestexplorer.fragment.list.MovieListFragment"
+        android:label="@string/List_Movie"
+        tools:layout="@layout/fragment_list" />
+    <action
+        android:id="@+id/action_global_movieListFragment"
+        app:destination="@id/movieListFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/seriesListFragment"
+        android:name="com.pureblacksoft.interestexplorer.fragment.list.SeriesListFragment"
+        android:label="@string/List_Series"
+        tools:layout="@layout/fragment_list" />
+    <action
+        android:id="@+id/action_global_seriesListFragment"
+        app:destination="@id/seriesListFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/gameListFragment"
+        android:name="com.pureblacksoft.interestexplorer.fragment.list.GameListFragment"
+        android:label="@string/List_Game"
+        tools:layout="@layout/fragment_list" />
+    <action
+        android:id="@+id/action_global_gameListFragment"
+        app:destination="@id/gameListFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/novelListFragment"
+        android:name="com.pureblacksoft.interestexplorer.fragment.list.NovelListFragment"
+        android:label="@string/List_Novel"
+        tools:layout="@layout/fragment_list" />
+    <action
+        android:id="@+id/action_global_novelListFragment"
+        app:destination="@id/novelListFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+    <!-- endregion -->
+
+    <!-- region DetailFragment -->
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.pureblacksoft.interestexplorer.fragment.detail.MovieDetailFragment"
+        android:label="@string/Movie_Title"
+        tools:layout="@layout/fragment_detail" />
+    <action
+        android:id="@+id/action_global_movieDetailFragment"
+        app:destination="@id/movieDetailFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/seriesDetailFragment"
+        android:name="com.pureblacksoft.interestexplorer.fragment.detail.SeriesDetailFragment"
+        android:label="@string/Series_Title"
+        tools:layout="@layout/fragment_detail" />
+    <action
+        android:id="@+id/action_global_seriesDetailFragment"
+        app:destination="@id/seriesDetailFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/gameDetailFragment"
+        android:name="com.pureblacksoft.interestexplorer.fragment.detail.GameDetailFragment"
+        android:label="@string/Game_Title"
+        tools:layout="@layout/fragment_detail" />
+    <action
+        android:id="@+id/action_global_gameDetailFragment"
+        app:destination="@id/gameDetailFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/novelDetailFragment"
+        android:name="com.pureblacksoft.interestexplorer.fragment.detail.NovelDetailFragment"
+        android:label="@string/Novel_Title"
+        tools:layout="@layout/fragment_detail" />
+    <action
+        android:id="@+id/action_global_novelDetailFragment"
+        app:destination="@id/novelDetailFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+    <!-- endregion -->
+
+</navigation>

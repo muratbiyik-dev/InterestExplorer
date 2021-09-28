@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PureRoot.Coordinator"
+    tools:context=".activity.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout style="@style/PureBar.AppBar">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarMA"
+            style="@style/PureBar.Toolbar">
+
+            <LinearLayout style="@style/PureBox.Linear">
+
+                <RelativeLayout
+                    style="@style/PureBar.Relative"
+                    android:layout_marginHorizontal="@dimen/App_Margin_M">
+
+                    <TextView
+                        android:id="@+id/txtToolbarTitleMA"
+                        style="@style/PureBar.Relative.Text"
+                        android:drawablePadding="@dimen/App_Padding_M"
+                        android:text="@string/Home_Title"
+                        app:drawableStartCompat="@drawable/ic_home" />
+
+                    <ImageView
+                        android:id="@+id/imgToolbarButtonMA"
+                        style="@style/PureBar.Relative.Image"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/Description_Icon"
+                        android:src="@drawable/ic_pref" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabMA"
+                    style="@style/PureBar.Tab" />
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchMA"
+                    style="@style/PureBar.Search"
+                    android:layout_marginBottom="@dimen/App_Margin_S"
+                    app:queryHint="@string/Search_Query_Hint" />
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/containerMA"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        style="@style/PureBox.Container.Scrollable"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_main" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavMA"
+        style="@style/PureBar.BottomNav"
+        app:menu="@menu/menu_bottom_nav" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

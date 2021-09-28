@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pureblacksoft.interestexplorer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InterestExplorer">
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.InterestExplorer.Launch"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- region MovieService -->
+        <service
+            android:name=".service.movie.AllMovieService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.movie.LatestMovieService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.movie.ChoiceMovieService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.movie.ListMovieService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.filter.MovieFilterService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- endregion -->
+
+        <!-- region SeriesService -->
+        <service
+            android:name=".service.series.AllSeriesService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.series.LatestSeriesService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.series.ChoiceSeriesService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.series.ListSeriesService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.filter.SeriesFilterService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- endregion -->
+
+        <!-- region GameService -->
+        <service
+            android:name=".service.game.AllGameService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.game.LatestGameService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.game.ChoiceGameService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.game.ListGameService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.filter.GameFilterService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- endregion -->
+
+        <!-- region NovelService -->
+        <service
+            android:name=".service.novel.AllNovelService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.novel.LatestNovelService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.novel.ChoiceNovelService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.novel.ListNovelService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.filter.NovelFilterService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- endregion -->
+
+        <service
+            android:name=".service.RecommendService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.SearchService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+    </application>
+
+</manifest>

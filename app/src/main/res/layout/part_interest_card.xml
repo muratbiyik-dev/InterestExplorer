@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/PureInterest.Linear.Horizontal">
+
+    <ImageView
+        android:id="@+id/imgInterestICP"
+        style="@style/PureInterest.Image"
+        android:layout_margin="@dimen/App_Margin_S"
+        android:contentDescription="@string/Description_Image"
+        android:src="@drawable/img_interest" />
+
+    <LinearLayout style="@style/PureBox.Linear">
+
+        <TextView
+            android:id="@+id/txtNameICP"
+            style="@style/PureInterest.Text.Title"
+            android:layout_margin="@dimen/App_Margin_S"
+            android:text="@string/Game_Name_Sample" />
+
+        <TextView
+            android:id="@+id/txtRatingICP"
+            style="@style/PureInterest.Text"
+            android:layout_margin="@dimen/App_Margin_S"
+            android:drawablePadding="@dimen/App_Padding_XS"
+            android:text="@string/Game_IMDB_Rating_Sample"
+            app:drawableStartCompat="@drawable/ic_rating" />
+
+        <TextView
+            android:id="@+id/txtYearICP"
+            style="@style/PureInterest.Text"
+            android:layout_margin="@dimen/App_Margin_S"
+            android:text="@string/Game_Release_Year_Sample" />
+
+        <TextView
+            android:id="@+id/txtGenreICP"
+            style="@style/PureInterest.Text"
+            android:layout_margin="@dimen/App_Margin_S"
+            android:text="@string/Game_Genre_Name_Sample" />
+
+        <TextView
+            android:id="@+id/txtCreatorICP"
+            style="@style/PureInterest.Text"
+            android:layout_margin="@dimen/App_Margin_S"
+            android:text="@string/Game_Studio_Name_Sample" />
+
+    </LinearLayout>
+
+</LinearLayout>
